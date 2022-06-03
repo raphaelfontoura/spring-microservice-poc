@@ -1,6 +1,6 @@
 package com.rdeveloper.customer;
 
-public record CustomerRegistrationRequest(String firsName,
+public record CustomerRegistrationRequest(String firstName,
                                           String lastName,
                                           String email) {
 }
