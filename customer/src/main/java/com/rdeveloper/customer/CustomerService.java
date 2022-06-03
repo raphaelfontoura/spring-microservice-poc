@@ -21,6 +21,7 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
                 customer.getId()
         );
 
+        assert fraudCheckResponse != null;
         if (fraudCheckResponse.isFraudster()) {
             throw new IllegalStateException("fraudster");
         }
